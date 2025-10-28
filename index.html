@@ -3,21 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vishwas Bharti</title>
+  <title>Vocabulary Builder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <p>Hosted with <strong>GitHub Pages</strong></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Open_book_nae_02.svg/512px-Open_book_nae_02.svg.png" 
+         alt="Book Banner" class="banner-img" />
+    <h1>Vocabulary Builder 📘</h1>
+    <p>Learn new words effortlessly</p>
   </header>
 
   <main>
-    <button id="colorButton">Change Background Color</button>
+    <section id="vocab-section">
+      <h2>Add a New Word</h2>
+      <input type="text" id="wordInput" placeholder="Enter a word..." />
+      <button id="addWordBtn">Add Word</button>
+
+      <div id="meaningDisplay"></div>
+
+      <h2>Your Flashcards</h2>
+      <div id="flashcards"></div>
+
+      <button id="randomBtn">Show Random Flashcard</button>
+      <div id="randomFlashcard" class="flashcard"></div>
+    </section>
   </main>
 
   <footer>
-    <p>Made with ❤️ by Vishwas Bharti</p>
+    <p>Made with ❤️ by [Your Name]</p>
   </footer>
 
   <script src="script.js"></script>
